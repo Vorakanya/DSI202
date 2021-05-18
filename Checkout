@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>MITR</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{% static  'css/main.css' %}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&display=swap">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+        background-color: white;
+        font-family: 'Inter', sans-serif;
+        }
+    
+        h1,h2,h3,h4,h5,h6{
+            color: black;
+        }
+    
+        li {
+            list-style: none;
+        }
+    
+        a:link{
+            text-decoration: none;
+            color: black;
+        }
+    
+        a {
+            color: black;
+        }
+    
+        #logo {
+        align-items: center;
+        padding: 0rem;
+        margin: 0;
+    
+        }
+    
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .head {
+            width: 100%;
+            height: 118px;
+            margin: 0 auto;
+            align-items: center;
+        }
+    
+        .hhl {
+            margin: 2px;
+            padding: 0px;
+            display: flex;
+            text-align: left;
+            justify-content: space-between;
+        }
+    
+        #hl {
+            margin-left: 20px;
+            margin-top: 0rem;
+            text-align: left;
+        }
+    
+        .left {
+            margin-left: 4rem;
+            margin-top: 2rem;
+        }
+    
+        #cyos {
+            margin-top: -0.5rem;
+        }
+        
+        .right {
+            margin-right: 4rem;
+            margin-top: 2.8rem;
+        }
+    
+        #l-right {
+            display: flex;
+            float: left;
+            word-spacing: 30px;
+        }
+    
+        #t1  {
+            margin-right: 1rem;
+        }
+    
+        #t2  {
+            margin-right: 1rem;
+        }
+    
+        #t3  {
+            margin-right: 1rem;
+        }
+    
+        #t4  {
+            margin-right: 1rem;
+        }
+    
+        #t5  {
+            margin-left: 1rem;
+        }
+
+        .container {
+            justify-content: center;
+            width: 100%;
+            height: 700px;
+        }
+
+        .row {
+            justify-content: center;
+            padding-top: 4rem;
+        }
+
+        .footer {
+           width: 100%;
+           height: 180px;
+           align-items: center;
+           text-align: center;
+           justify-content: center;
+           padding-top: 30px;
+           line-height: 20px;
+           color: white;
+           background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="head">
+        <section class="topbar">    
+            <a href="">
+                <div class="left">
+                    <section class="hhl">
+                        <img id="logo" src="https://www.img.in.th/images/ba9f5af365be7ef8d03d498a00c9ebd8.png" height="60px" width="60px"/>
+                        <div id="hl">
+                            <h2 id="mmm"> <strong>MITR</strong></h2> <br>
+                            <h5 id="cyos"> CUSTOM YOUR OWN SKATEBOARD</h5>
+                        </div>
+                    </section>
+      
+                </div>
+            </a>
+      
+            <div class="right">
+                <ul id="l-right">
+                    <div id="t1">
+                        <li><a id="t1" href="http://127.0.0.1:8000/main/">MAIN</a></li>
+                    </div>
+                    <div id="t2">
+                        <li><a href="http://127.0.0.1:8000/about/">ABOUT</a></li> 
+                    </div>
+                    <div id="t3">
+                        <li><a  href="http://127.0.0.1:8000/store/">STORE</a></li> 
+                    </div>
+                    <div id="t4">
+                        <li><a  href="http://127.0.0.1:8000/promotion/">PROMOTION</a></li>
+                    </div>
+                    <div id="t5">
+                        <a href="http://127.0.0.1:8000/cart/">
+                            <img src="https://www.img.in.th/images/5200980ccbe69921f9ad101a7feb09bf.jpg" alt="รถเข็น" height="20px" width="20px" />
+                        </a>
+                    </div>
+                    </li>  
+                </ul>
+            </div>
+          </section>
+    </div>
+      
+    <div class="container">
+        {% block content %}
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="box-element" id="form-wrapper"> 
+                    <form id="form">
+                        <div id="user-info">
+                            <div class="form-field">
+                                    <input required class="form-control" type="text" name="name" placeholder="Name..">
+                                </div>
+                                <div class="form-field">
+                                    <input required class="form-control" type="email" name="email" placeholder="Email..">
+                                </div>
+        
+                        </div>
+        
+                        <div id="shipping info">
+                            <hr>
+                            <p>Shipping Information:</p>
+                            <hr>
+                            <div class="form-field">
+                                <input class="form-control" type="text" name="address" placeholder="Address..">
+                            </div>
+                            <div class="form-field">
+                                <input class="form-control" type="text" name="city" placeholder="City..">
+                            </div>
+                            <div class="form-field">
+                                <input class="form-control" type="text" name="state" placeholder="State..">
+                            </div>
+                            <div class="form-field">
+                                <input class="form-control" type="text" name="zipcode" placeholder="Zip code..">
+                            </div>
+                            <div class="form-field">
+                                <input class="form-control" type="text" name="country" placeholder="Zip code..">
+                            </div>
+                        </div>
+        
+                        <hr>
+                        <input id="form-button" class="btn btn-success btn-block" type="submit" style="background-color:
+                         rgb(30, 30, 90);" value="Continue">
+                    </form>  
+                </div>
+                <br>
+        
+                <div class="box-element hidden" id="payment-info">
+                    <small>Paypal Options</small>
+                </div>
+        
+            </div>  
+        </div>
+        {% endblock content %}
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<div class="footer">
+    <section class="socail">
+        <ul>
+            <a href="https://www.facebook.com/wix">
+                <img src="https://www.img.in.th/images/23d4f1d8164d2406cdf08b76e63859cb.png" alt="face" height="30" width="30" >
+            </a>
+            <a href="https://twitter.com/Wix">
+                <img src="https://www.img.in.th/images/3cd3132225daeadcdf086016320af11b.png" alt="twit" height="28" width="28" >
+            </a>
+            <a href="https://www.linkedin.com/company/wix-com/">
+                <img src="https://www.img.in.th/images/017f10bf1f39ee89d9c897106e818b9d.png" alt="in" height="28" width="28" >
+            </a>
+        </ul>
+        <br>
+        <br>
+        <p> &copy;2020 created by Unique dsi202</p>
+    </section>
+</div>
+</body>
+</html>
