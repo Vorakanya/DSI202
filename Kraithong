@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kraithing | mitr</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&display=swap">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Kraithong_store.css' %}">
+
+    <style>
+              * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+        background-color: white;
+        font-family: 'Inter', sans-serif;
+        }
+    
+        h1,h2,h3,h4,h5,h6{
+            color: black;
+        }
+    
+        li {
+            list-style: none;
+        }
+    
+        a:link{
+            text-decoration: none;
+            color: black;
+        }
+    
+        a {
+            color: black;
+        }
+    
+        #logo {
+        align-items: center;
+        padding: 0rem;
+        margin: 0;
+    
+        }
+    
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .head {
+            width: 100%;
+            height: 118px;
+            margin: 0 auto;
+            align-items: center;
+        }
+    
+        .hhl {
+            margin: 2px;
+            padding: 0px;
+            display: flex;
+            text-align: left;
+            justify-content: space-between;
+        }
+    
+        #hl {
+            margin-left: 20px;
+            margin-top: 0rem;
+            text-align: left;
+        }
+    
+        .left {
+            margin-left: 4rem;
+            margin-top: 2rem;
+        }
+    
+        #cyos {
+            margin-top: -0.5rem;
+        }
+        
+        .right {
+            margin-right: 4rem;
+            margin-top: 2.8rem;
+        }
+    
+        #l-right {
+            display: flex;
+            float: left;
+            word-spacing: 30px;
+        }
+    
+        #t1  {
+            margin-right: 1rem;
+        }
+    
+        #t2  {
+            margin-right: 1rem;
+        }
+    
+        #t3  {
+            margin-right: 1rem;
+        }
+    
+        #t4  {
+            margin-right: 1rem;
+        }
+    
+        #t5  {
+            margin-left: 1rem;
+        }
+
+        .main {
+    width: 980px;
+    height: 1546px;
+    margin: 0 auto;
+}
+
+.linkhead{
+    width: 980px;
+    height: 148px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: center;
+}
+
+.changecol{
+    width: 980px;
+    height: 55px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+.pic{
+    width: 980px;
+    height: 55px;
+    margin: 0 auto;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.detail{
+    width: 980px;
+    height: 747px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+#ori{
+    margin-bottom: 3rem;
+}
+
+.img{
+    width: 980px;
+    height: 551px;
+    background-color: white;
+}
+
+.detail-r{
+    
+    text-align: left;
+}
+
+#line {
+    line-height: 30px;
+    border-radius: 0;
+}
+
+#b1 {
+    width: 23px;
+    height: 23px;
+    margin: 0 auto;
+    text-align: center;
+    border: 0px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+#b2 {
+    width: 23px;
+    height: 23px;
+    margin: 0 auto;
+    text-align: center;
+    border: 0px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+#b3 {
+    width: 23px;
+    height: 23px;
+    margin: 0 auto;
+    text-align: center;
+    border: 0px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+#ch2 {
+    font-size: 18px;
+}
+
+.buy{
+    margin: 1rem;
+}
+
+#put {
+    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+#name {
+    width: 224px;
+    height: 150px;
+}
+
+#count {
+    width: 100px;
+    height: 43px;
+}
+
+::placeholder {
+    position: absolute;
+}
+
+#addc {
+    width: 110x;
+    height: 40px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding-top: 0.5rem;
+    margin-top: 50px;
+    background-color: rgb(27, 46, 107);
+}
+
+.footer {
+           width: 100%;
+           height: 180px;
+           align-items: center;
+           text-align: center;
+           justify-content: center;
+           padding-top: 30px;
+           line-height: 20px;
+           color: white;
+           background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <section class="topbar">    
+            <a href="">
+                <div class="left">
+                    <section class="hhl">
+                        <img id="logo" src="https://www.img.in.th/images/ba9f5af365be7ef8d03d498a00c9ebd8.png" height="60px" width="60px"/>
+                        <div id="hl">
+                            <h2 id="mmm"> <strong>MITR</strong></h2> <br>
+                            <h5 id="cyos"> CUSTOM YOUR OWN SKATEBOARD</h5>
+                        </div>
+                    </section>
+      
+                </div>
+            </a>
+      
+            <div class="right">
+                <ul id="l-right">
+                    <div id="t1">
+                        <li><a id="t1" href="http://127.0.0.1:8000/main/">MAIN</a></li>
+                    </div>
+                    <div id="t2">
+                        <li><a href="http://127.0.0.1:8000/about/">ABOUT</a></li> 
+                    </div>
+                    <div id="t3">
+                        <li><a  href="http://127.0.0.1:8000/store/">STORE</a></li> 
+                    </div>
+                    <div id="t4">
+                        <li><a  href="http://127.0.0.1:8000/promotion/">PROMOTION</a></li>
+                    </div>
+                    <div id="t5">
+                        <a href="http://127.0.0.1:8000/cart/">
+                            <img src="https://www.img.in.th/images/5200980ccbe69921f9ad101a7feb09bf.jpg" alt="รถเข็น" height="20px" width="20px" />
+                        </a>
+                    </div>
+                    </li>  
+                </ul>
+            </div>
+          </section>
+    </div>
+
+    <div class="main">
+        <section class="linkhead">
+            <div class="linkhead-l">
+                <a href="http://127.0.0.1:8000/main/"> หน้าหลัก /</a>
+                <a href="http://127.0.0.1:8000/store/"> Store /</a>
+                <a href="http://127.0.0.1:8000/kraithong/"> KRAITHONG </a>
+            </div>
+    
+            <div class="linkhead-r">
+                <a href="http://127.0.0.1:8000/hanuman/"> &lt; ก่อนหน้า</a>
+                <a href="http://127.0.0.1:8000/nagas/">| ถัดไป &gt;</a>
+            </div>
+        </section>
+
+        <div class="img">
+            <div>
+                <img src="https://www.img.in.th/images/b191a4dfba7344fcd5854f92f7e5c141.png" height="350px" width="600px" />
+            </div>
+        </div>
+
+        <div class="changecol">
+            <div class="pic">
+                <div onclick="document.getElementById('ch1').src='https://www.img.in.th/images/b191a4dfba7344fcd5854f92f7e5c141.png'">
+                    <img src="https://www.img.in.th/images/b191a4dfba7344fcd5854f92f7e5c141.png" alt="สีเหลือง" width="60px" height="50px">
+                </div>
+                <div onclick="document.getElementById('ch1').src='https://www.img.in.th/images/d1ef27f5cbfca8b282678d67f9f4b060.png'">
+                    <img id="mitr-y" src="https://www.img.in.th/images/d1ef27f5cbfca8b282678d67f9f4b060.png" alt="สีขาว" width="60px" height="50px"> 
+                </div>
+                <div onclick="document.getElementById('ch1').src='https://www.img.in.th/images/abff5231ab0d0e2c02b1377ffa82b43f.png'">
+                    <img id="mitr-y" src="https://www.img.in.th/images/abff5231ab0d0e2c02b1377ffa82b43f.png" alt="สีเขียว" width="60px" height="50px"> 
+                </div>
+                 
+            </div>
+        </div>
+
+        <div class="detail">
+            <section class="detail-l">
+            <h1 id="mitr"> <b>Kraithong</b> </h1>
+            <br>
+            <p>SKU: 217537123517253</p>
+            <br>
+            <p id="ori"></p>
+            <br>
+            <p>PRODUCT INFO</p>
+            <br>
+            <p>
+            Our product inspiration came from the street art upon Pracha Naruemit or also <br>
+            as “The Wood Street”. Our board printed on veener plywood and laser <br>
+            engraved to give traditional folklore art of the Thai Culture. The art upon it was <br>
+            made by artist of Thailand to give them more recognition of their art and the thai <br>
+            culture. Furthermore, our skateboard is environmental friendly compared to <br>
+            traditional boards that are made out of maple hardwood.
+            </p>
+            <br>
+            <br>
+            <hr id="line">
+            <br>
+            <br>
+            <p> RETURN & REFUND POLICY </p>
+            <br>
+            <p>15 Days Return <br> 15 days easy returns for MITR products</p>
+            <br>
+            <br>
+            <hr id="line">
+            <br>
+            <br>
+            <p> SHIPPING INFO</p>
+            <br>
+            <p>Free worldwide shipping </p>
+            </section>
+            <section class="detail-r"> 
+                <div>
+                    <p style="font-size: 19px;"><del>฿8,000.00</del> ฿6,400.00</p>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <div>
+                        <p id="ch2"> Color  </p>
+                        <br>
+                        <div>
+                            <button id="b1" onclick="change1()"></button>
+                            <script>
+                                function change1() {
+                                document.getElementById('ch1').src= "https://www.img.in.th/images/d1ef27f5cbfca8b282678d67f9f4b060.png";
+                                document.getElementById('ch2').innerHTML = "Color : White"
